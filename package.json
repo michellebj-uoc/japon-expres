@@ -1,0 +1,19 @@
+{
+  "name": "japon-expres",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Michelle Bazán Jiménez",
+    "email": "michellebj@uoc.edu"
+  },
+  "license": "ISC",
+  "description": "Japón Exprés: ruta rápida de 7 días por Japón",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
+}
