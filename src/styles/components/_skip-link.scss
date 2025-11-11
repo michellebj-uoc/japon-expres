@@ -1,0 +1,18 @@
+@import "../base/variables";
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: $color-red-soft;
+  color: white;
+  border-radius: 999px;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}

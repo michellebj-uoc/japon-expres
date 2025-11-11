@@ -1,0 +1,44 @@
+@import "../base/variables";
+@import "../base/base";
+
+header {
+  background-color: $color-red-soft;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header__inner {
+  @extend .l-container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: $spacing-sm;
+  padding-bottom: $spacing-sm;
+}
+
+.header__branding {
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  font-family: $font-brand;
+  color: $color-text-light;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  gap: $spacing-sm;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: $color-text-light;
+  
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+  text-decoration: underline;
+   font-weight: 700;
+}
