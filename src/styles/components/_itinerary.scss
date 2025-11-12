@@ -1,0 +1,59 @@
+@import "../base/variables";
+
+.itinerary-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+}
+
+.itinerary-list__item {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.itinerary-list__figure {
+  margin: 0;
+}
+
+.itinerary-list__figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.itinerary-list__content {
+  padding: $spacing-md;
+}
+
+.itinerary-list__title {
+  margin-bottom: $spacing-xs;
+}
+
+.itinerary-list__title a {
+  color: $color-green-deep;
+}
+
+.itinerary-list__title a:hover,
+.itinerary-list__title a:focus {
+  text-decoration: underline;
+}
+
+.itinerary-list__text {
+  margin: 0;
+  color: $color-text-muted;
+}
+
+/* Dos columnas - pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .itinerary-list__item {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 2fr);
+  }
+}
