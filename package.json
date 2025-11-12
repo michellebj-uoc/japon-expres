@@ -17,5 +17,8 @@
     "@parcel/transformer-sass": "^2.16.1",
     "parcel": "^2.16.1",
     "sass": "^1.93.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0"
   }
 }

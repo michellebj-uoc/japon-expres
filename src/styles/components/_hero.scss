@@ -1,0 +1,60 @@
+@import "../base/variables";
+
+.hero {
+  background-color: $color-grey-light;
+  padding: $spacing-lg $spacing-sm $spacing-xl;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+}
+
+.hero__content {
+  max-width: 36rem;
+}
+
+.hero__eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: $color-red-deep;
+  margin-bottom: $spacing-xs;
+}
+
+.hero__title {
+  font-size: 1.8rem;
+  margin-bottom: $spacing-sm;
+}
+
+.hero__text {
+  margin-bottom: $spacing-sm;
+  color: $color-text-muted;
+}
+
+.hero__image img {
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (min-width: 768px) {
+  .hero__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__content {
+    flex: 1 1 55%;
+  }
+
+  .hero__image {
+    flex: 1 1 40%;
+  }
+
+  .hero__title {
+    font-size: 2.1rem;
+  }
+}

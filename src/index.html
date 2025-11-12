@@ -29,19 +29,92 @@
     </header>
 
     <main id="main-content">
-        <div class="l-container section"></div>
-      <section>
-        <h1>Japón Exprés: ruta rápida de 7 días</h1>
-        <p>
-          Este sitio web presenta una ruta rápida de 7 días por Japón, ideal para un primer viaje
-          en el que quieras combinar grandes ciudades, tradición, gastronomía y vida nocturna.
-        </p>
-        <p>
-          A lo largo del itinerario visitarás Tokio, Takayama, Kioto y Osaka, con recomendaciones
-          sobre qué ver en cada destino y cómo aprovechar mejor tu tiempo.
-        </p>
+        <section class="hero" aria-labelledby="hero-title">
+        <div class="l-container hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Ruta de 7 días por Japón</p>
+            <h1 id="hero-title" class="hero__title">
+              Descubre Tokio, Takayama, Kioto y Osaka en una semana
+            </h1>
+            <p class="hero__text">
+              Japón Exprés es una mini guía pensada para tu primer viaje a Japón: un itinerario
+              compacto de 7 días que combina grandes ciudades, historia, templos, pueblos
+              tradicionales y gastronomía local.
+            </p>
+            <p class="hero__text">
+              Empieza en Tokio, continúa hacia los Alpes japoneses y termina bajo los neones de
+              Osaka, con recomendaciones claras sobre qué ver en cada parada.
+            </p>
+            <a class="button button--primary" href="/categoria">
+              Ver itinerario completo
+            </a>
+          </div>
+          <div class="hero__image">
+            <img
+              src="./assets/images/tokio-asakusa-principal.jpg"
+              alt="Vista del templo Sensō-ji en Tokio"
+            />
+          </div>
+        </div>
       </section>
-      </div>
+
+      <!-- Ciudades -->
+      <section class="section" aria-labelledby="destinos-title">
+        <div class="l-container">
+          <div class="section__header">
+            <h2 id="destinos-title">Destinos del itinerario Japón Exprés</h2>
+            <p>
+              A lo largo de la ruta visitarás cuatro zonas clave del país, cada una con su carácter
+              propio. Estas son las paradas principales que encontrarás en el itinerario:
+            </p>
+          </div>
+
+          <div class="destinations-grid">
+            <article class="destination-card">
+                <i class="fa-solid fa-torii-gate"></i>
+              <h3 class="destination-card__title">Tokio</h3>
+              <p class="destination-card__text">
+                Tres días para descubrir el contraste entre templos tradicionales, jardines
+                imperiales y barrios llenos de neones y rascacielos.
+              </p>
+              <p class="destination-card__link-wrapper">
+                <a class="destination-card__link" href="/det1">Ver día 2: Tokio tradicional</a>
+              </p>
+            </article>
+
+            <article class="destination-card">
+                <i class="fa-solid fa-tree"></i>
+    
+              <h3 class="destination-card__title">Takayama</h3>
+              <p class="destination-card__text">
+                Un día en un pueblo de montaña con casas de madera, calles históricas y un ambiente
+                mucho más pausado.
+              </p>
+            </article>
+
+            <article class="destination-card">
+                <i class="fa-solid fa-vihara"></i>
+              <h3 class="destination-card__title">Kioto</h3>
+              <p class="destination-card__text">
+                Dos días entre templos, santuarios, barrios tradicionales y paisajes naturales
+                únicos como Fushimi Inari o Arashiyama.
+              </p>
+            </article>
+
+            <article class="destination-card">
+            <i class="fa-solid fa-bowl-food"></i>
+              <h3 class="destination-card__title">Osaka</h3>
+              <p class="destination-card__text">
+                Un final de viaje entre castillos, comida callejera y carteles luminosos en la
+                animada zona de Dotonbori.
+              </p>
+              <p class="destination-card__link-wrapper">
+                <a class="destination-card__link" href="/det2">Ver día 7: Osaka nocturna</a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>

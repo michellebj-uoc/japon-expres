@@ -1,0 +1,61 @@
+@import "../base/variables";
+
+.section__header {
+  margin-bottom: $spacing-lg;
+  font-size: 1.10rem;
+}
+
+.section__header p {
+  color: $color-text-muted;
+  font-size: 1rem;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-md;
+}
+
+.destination-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: $spacing-md;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.destination-card i { font-size: 2.25rem; color: $color-red-strong; }
+
+.destination-card__title {
+  margin-bottom: $spacing-xs;
+}
+
+.destination-card__text {
+  margin-bottom: $spacing-sm;
+  color: $color-text-muted;
+}
+
+.destination-card__link-wrapper {
+  margin-top: $spacing-xs;
+}
+
+.destination-card__link {
+  font-weight: 600;
+}
+
+.destination-card__link::after {
+  content: " →";
+}
+
+/* Layout en rejilla para pantallas más anchas */
+@media (min-width: 768px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .destinations-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
