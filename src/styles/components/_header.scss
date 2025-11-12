@@ -15,11 +15,16 @@ header {
   padding-bottom: $spacing-sm;
 }
 
-.header__branding {
+.header__title {
   font-size: 1.5rem;
   letter-spacing: 0.04em;
   font-family: $font-brand;
   color: $color-text-light;
+}
+.header__title:hover, 
+.header__title:focus  {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .header__nav-list {
@@ -39,6 +44,14 @@ header {
 
 .header__nav-link:hover,
 .header__nav-link:focus {
-  text-decoration: underline;
-   font-weight: 700;
+  text-decoration: none;
+  background-color: #fff; 
+  color: $color-red-strong;
+  padding: 5px 10px; 
+  border-radius: 15px;
+}
+
+.header__nav-link:focus-visible {
+  outline: 2px solid $color-red-deep;
+  outline-offset: 2px;
 }

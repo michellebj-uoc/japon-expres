@@ -23,3 +23,8 @@
   background-color: $color-red-strong;
   text-decoration: none;
 }
+
+.button:focus-visible {
+  outline: 3px solid $color-red-strong;
+  outline-offset: 2px;
+}
