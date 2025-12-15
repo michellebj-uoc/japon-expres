@@ -16,14 +16,15 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.1",
     "parcel": "^2.16.1",
-    "sass": "^1.93.3"
+    "sass": "^1.93.3",
+    "sharp": "^0.33.5"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0"
   },
   "browserslist": [
-  ">0.5%",
-  "last 2 versions",
-  "not dead"
-]
+    ">0.5%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
