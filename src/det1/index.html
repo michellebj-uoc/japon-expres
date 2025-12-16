@@ -37,10 +37,41 @@
           </div>
 
           <figure class="detail__hero-figure">
-            <img
-              src="../assets/images/tokio-asakusa-principal.jpg"
-              alt="Vista del templo Sensō-ji en Asakusa"
-            />
+              <picture>
+                <!-- Imagen para móvil (dirección de arte) -->
+                <source
+                  media="(max-width: 767px)"
+                  type="image/avif"
+                  srcset="../assets/images/tokio-asakusa-mobile.jpg?as=avif&width=600"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  srcset="../assets/images/tokio-asakusa-mobile.jpg?as=webp&width=600"
+                />
+
+                <!-- Imagen para escritorio -->
+                <source
+                  media="(min-width: 768px)"
+                  type="image/avif"
+                  srcset="../assets/images/tokio-asakusa-principal.jpg?as=avif&width=1200"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="../assets/images/tokio-asakusa-principal.jpg?as=webp&width=1200"
+                />
+
+                <!-- Fallback -->
+                <img
+                  src="../assets/images/tokio-asakusa-principal.jpg?width=1200"
+                  alt="Vista del templo Sensō-ji en el barrio de Asakusa, Tokio"
+                  width="1200"
+                  height="800"
+                />
+              </picture>
             <figcaption>Templo Sensō-ji, uno de los lugares más emblemáticos de Asakusa.</figcaption>
           </figure>
 
