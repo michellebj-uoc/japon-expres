@@ -50,10 +50,38 @@
             </a>
           </div>
           <div class="hero__image">
-            <img
-              src="./assets/images/tokio-asakusa-principal.jpg"
-              alt="Vista del templo Sensō-ji en Tokio"
-            />
+              <picture>
+                <!-- AVIF -->
+                <source
+                  type="image/avif"
+                  srcset="
+                    ./assets/images/tokio-asakusa-principal.jpg?as=avif&width=480 480w,
+                    ./assets/images/tokio-asakusa-principal.jpg?as=avif&width=768 768w,
+                    ./assets/images/tokio-asakusa-principal.jpg?as=avif&width=1200 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+
+                <!-- WebP -->
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./assets/images/tokio-asakusa-principal.jpg?as=webp&width=480 480w,
+                    ./assets/images/tokio-asakusa-principal.jpg?as=webp&width=768 768w,
+                    ./assets/images/tokio-asakusa-principal.jpg?as=webp&width=1200 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+
+                <!-- JPG fallback -->
+                <img
+                  src="./assets/images/tokio-asakusa-principal.jpg?width=1200"
+                  alt="Vista del templo Sensō-ji en Tokio, uno de los puntos clave del Japón tradicional"
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </picture>
           </div>
         </div>
       </section>
