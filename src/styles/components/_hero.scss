@@ -63,10 +63,35 @@
   fill: none;
   stroke: currentColor;
   stroke-width: 4;
+
+  stroke-dasharray: 430;
+  stroke-dashoffset: 430;
+
+  animation: draw-circle 1.2s ease-out forwards;
+}
+
+@keyframes draw-circle {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .hero__seal-svg rect {
   fill: currentColor;
+
+  opacity: 0;
+  transform: scale(0.9);
+  transform-origin: center;
+
+  animation: reveal-torii 0.6s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes reveal-torii {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 768px) {
@@ -95,5 +120,15 @@
     height: 72px;
     right: -$spacing-sm;
     bottom: -$spacing-sm;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seal__circle,
+  .hero__seal-svg rect {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
   }
 }
