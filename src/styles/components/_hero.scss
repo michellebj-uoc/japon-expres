@@ -1,14 +1,44 @@
 @import "../base/variables";
 
 .hero {
-  background-color: $color-grey-light;
-  padding: $spacing-lg $spacing-sm $spacing-xl;
+  position: relative;
+  margin-top: -$spacing-lg;
+  padding-top: calc(#{$spacing-lg} + #{$spacing-sm});
+  padding-bottom: 4rem;
 }
+
+.hero__background {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right,
+      rgba(244, 239, 229, 0.91),
+      rgba(149, 169, 144, 0.871)
+    ),
+    url("../assets/images/fondo-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 85%,
+    75% 100%,
+    0 92%
+  );
+
+  z-index: 0;
+}
+
 
 .hero__inner {
   display: flex;
   flex-direction: column;
   gap: $spacing-lg;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__content {
@@ -30,7 +60,7 @@
 
 .hero__text {
   margin-bottom: $spacing-sm;
-  color: $color-text-muted;
+  color: $color-text-main;
 }
 
 .hero__image img {
@@ -95,6 +125,10 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding-bottom: 7rem;
+  }
+
   .hero__inner {
     flex-direction: row;
     align-items: center;
@@ -115,6 +149,14 @@
 }
 
 @media (max-width: 480px) {
+  .hero__background {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 92%,
+      0 100%
+    );
+  }
   .hero__seal--overlay {
     width: 72px;
     height: 72px;
