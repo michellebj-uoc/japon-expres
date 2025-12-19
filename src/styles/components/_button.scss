@@ -10,6 +10,7 @@
   border: none;
   cursor: pointer;
   margin-top: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .button--primary {
@@ -22,6 +23,7 @@
 .button--primary:focus {
   background-color: $color-red-strong;
   text-decoration: none;
+  transform: translateY(-2px);
 }
 
 .button:focus-visible {
