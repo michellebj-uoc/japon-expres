@@ -5,6 +5,8 @@
     <title>Día 2 – Tokio tradicional: Asakusa, Palacio Imperial y Torre de Tokio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Itinerario del Día 2 en Tokio: Asakusa, Palacio Imperial y Torre de Tokio."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../styles/main.scss" />
   </head>
   <body>
@@ -68,6 +70,8 @@
                 <img
                   src="../assets/images/tokio-asakusa-principal.jpg?width=1200"
                   alt="Vista del templo Sensō-ji en el barrio de Asakusa, Tokio"
+                  fetchpriority="high"
+                  decoding="async"
                   width="1200"
                   height="800"
                 />
@@ -135,7 +139,13 @@
                   rel="noopener"
                 >
                 <img
-                  src="../assets/images/tokio-asakusa-calle.jpg"
+                  src="../assets/images/tokio-asakusa-calle.jpg?width=600"
+                  srcset="
+                    ../assets/images/tokio-asakusa-calle.jpg?width=400 400w,
+                    ../assets/images/tokio-asakusa-calle.jpg?width=600 600w,
+                    ../assets/images/tokio-asakusa-calle.jpg?width=800 800w
+                  "
+                  sizes="(max-width: 768px) 100vw, 600px"
                   alt="Calle tradicional con tiendas en Asakusa"
                   loading="lazy"
                   decoding="async"
@@ -154,7 +164,13 @@
                   rel="noopener"
                 >
                 <img
-                  src="../assets/images/tokio-palacio-imperial.jpg"
+                  src="../assets/images/tokio-palacio-imperial.jpg?width=600"
+                  srcset="
+                    ../assets/images/tokio-palacio-imperial.jpg?width=400 400w,
+                    ../assets/images/tokio-palacio-imperial.jpg?width=600 600w,
+                    ../assets/images/tokio-palacio-imperial.jpg?width=800 800w
+                  "
+                  sizes="(max-width: 768px) 100vw, 600px"
                   alt="Jardines del Palacio Imperial de Tokio"
                   loading="lazy"
                   decoding="async"
@@ -173,7 +189,13 @@
                   rel="noopener"
                 >
                 <img
-                  src="../assets/images/tokio-torre.jpg"
+                  src="../assets/images/tokio-torre.jpg?width=600"
+                  srcset="
+                    ../assets/images/tokio-torre.jpg?width=400 400w,
+                    ../assets/images/tokio-torre.jpg?width=600 600w,
+                    ../assets/images/tokio-torre.jpg?width=800 800w
+                  "
+                  sizes="(max-width: 768px) 100vw, 600px"
                   alt="La Torre de Tokio"
                   loading="lazy"
                   decoding="async"
