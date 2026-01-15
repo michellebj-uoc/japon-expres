@@ -5,6 +5,8 @@
     <title>Día 7 – Osaka: Castillo, comida callejera y neones de Dotonbori</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Itinerario del Día 7 en Osaka: Castillo, comida callejera y neones de Dotonbori."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link rel="stylesheet" href="../styles/main.scss" />
   </head>
   <body>
@@ -44,6 +46,9 @@
                 ../assets/images/osaka-castillo-principal.jpg?width=1600 2x
                 "     
               alt="Vista del Castillo de Osaka rodeado de vegetación"
+              fetchpriority="high"
+              decoding="async"
+              loading="eager"
               width="800"
               height="533"
             />
@@ -107,7 +112,13 @@
                   rel="noopener"
                 >
                 <img
-                  src="../assets/images/osaka-castillo-parque.jpg"
+                  src="../assets/images/osaka-castillo-parque.jpg?width=600"
+                  srcset="
+                    ../assets/images/osaka-castillo-parque.jpg?width=400 400w,
+                    ../assets/images/osaka-castillo-parque.jpg?width=600 600w,
+                    ../assets/images/osaka-castillo-parque.jpg?width=800 800w
+                  "
+                  sizes="(max-width: 768px) 100vw, 600px"
                   alt="Parque que rodea el Castillo de Osaka"
                   loading="lazy"
                   decoding="async"
@@ -126,7 +137,13 @@
                   rel="noopener"
                 >
                 <img
-                  src="../assets/images/osaka-comida-callejera.jpg"
+                  src="../assets/images/osaka-comida-callejera.jpg?width=600"
+                  srcset="
+                    ../assets/images/osaka-comida-callejera.jpg?width=400 400w,
+                    ../assets/images/osaka-comida-callejera.jpg?width=600 600w,
+                    ../assets/images/osaka-comida-callejera.jpg?width=800 800w
+                  "
+                  sizes="(max-width: 768px) 100vw, 600px"
                   alt="Platos de comida callejera típica de Osaka"
                   loading="lazy"
                   decoding="async"
@@ -143,11 +160,15 @@
                   class="detail__gallery-link"
                   target="_blank"
                   rel="noopener"
-                  loading="lazy"
-                  decoding="async"
                 >
                 <img
-                  src="../assets/images/osaka-dotonbori-neones.jpg"
+                  src="../assets/images/osaka-dotonbori-neones.jpg?width=600"
+                  srcset="
+                    ../assets/images/osaka-dotonbori-neones.jpg?width=400 400w,
+                    ../assets/images/osaka-dotonbori-neones.jpg?width=600 600w,
+                    ../assets/images/osaka-dotonbori-neones.jpg?width=800 800w
+                  "
+                  sizes="(max-width: 768px) 100vw, 600px"
                   alt="Neones y carteles luminosos en la zona de Dotonbori"
                   loading="lazy"
                   decoding="async"
