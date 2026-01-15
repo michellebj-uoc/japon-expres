@@ -57,6 +57,7 @@
                 <!-- AVIF -->
                 <source
                   type="image/avif"
+                  rel="preload"
                   srcset="
                     ./assets/images/tokio-asakusa-principal.jpg?as=avif&width=480 480w,
                     ./assets/images/tokio-asakusa-principal.jpg?as=avif&width=768 768w,
@@ -78,13 +79,19 @@
 
                 <!-- JPG fallback -->
                 <img
-                  src="./assets/images/tokio-asakusa-principal.jpg?width=1200"
+                  src="./assets/images/tokio-asakusa-principal.jpg?width=700"
+                  srcset="
+                    ./assets/images/tokio-asakusa-principal.jpg?width=500 500w,
+                    ./assets/images/tokio-asakusa-principal.jpg?width=700 700w,
+                    ./assets/images/tokio-asakusa-principal.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="Vista del templo Sensō-ji en Tokio, uno de los puntos clave del Japón tradicional"
                   fetchpriority="high"
                   decoding="async"
                   loading="eager"
-                  width="1200"
-                  height="800"
+                  width="900"
+                  height="600"
                 />
               </picture>
               <!-- Sello SVG -->
