@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Itinerario de 7 días por Japón: Tokio, Takayama, Kioto y Osaka." />
     <link rel="stylesheet" href="../styles/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   </head>
   <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -40,8 +43,16 @@
             <li class="itinerary-list__item">
               <figure class="itinerary-list__figure">
                 <img
-                  src="../assets/images/tokio-dia1-llegada.jpg"
+                  src="../assets/images/tokio-dia1-llegada.jpg?width=700"
+                  srcset="
+                    ../assets/images/tokio-dia1-llegada.jpg?width=500 500w,
+                    ../assets/images/tokio-dia1-llegada.jpg?width=700 700w,
+                    ../assets/images/tokio-dia1-llegada.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="Vista urbana de Tokio al atardecer"
+                  fetchpriority="high"
+                  decoding="async"
                   width="900"
                   height="600"
                 />
@@ -58,7 +69,13 @@
             <li class="itinerary-list__item">
               <figure class="itinerary-list__figure">
                 <img
-                  src="../assets/images/tokio-dia2-tradicional.jpg"
+                  src="../assets/images/tokio-dia2-tradicional.jpg?width=700"
+                  srcset="
+                    ../assets/images/tokio-dia2-tradicional.jpg?width=500 500w,
+                    ../assets/images/tokio-dia2-tradicional.jpg?width=700 700w,
+                    ../assets/images/tokio-dia2-tradicional.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="Detalle templo tradicional en Asakusa, Tokio"
                   width="900"
                   height="600"
@@ -78,7 +95,13 @@
             <li class="itinerary-list__item">
               <figure class="itinerary-list__figure">
                 <img
-                  src="../assets/images/tokio-dia3-moderno.jpg"
+                  src="../assets/images/tokio-dia3-moderno.jpg?width=700"
+                  srcset="
+                    ../assets/images/tokio-dia3-moderno.jpg?width=500 500w,
+                    ../assets/images/tokio-dia3-moderno.jpg?width=700 700w,
+                    ../assets/images/tokio-dia3-moderno.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="Cruce iluminado en una zona moderna de Tokio"
                   loading="lazy"
                   decoding="async"
@@ -98,7 +121,13 @@
             <li class="itinerary-list__item">
               <figure class="itinerary-list__figure">
                 <img
-                  src="../assets/images/takayama-dia4.jpg"
+                  src="../assets/images/takayama-dia4.jpg?width=700"
+                  srcset="
+                    ../assets/images/takayama-dia4.jpg?width=500 500w,
+                    ../assets/images/takayama-dia4.jpg?width=700 700w,
+                    ../assets/images/takayama-dia4.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="Calle tradicional con casas de madera en Takayama"
                   loading="lazy"
                   decoding="async"
@@ -118,7 +147,13 @@
             <li class="itinerary-list__item">
               <figure class="itinerary-list__figure">
                 <img
-                  src="../assets/images/kioto-dia5.jpg"
+                  src="../assets/images/kioto-dia5.jpg?width=700"
+                  srcset="
+                    ../assets/images/kioto-dia5.jpg?width=500 500w,
+                    ../assets/images/kioto-dia5.jpg?width=700 700w,
+                    ../assets/images/kioto-dia5.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="TFushimi Inari en Kioto"
                   loading="lazy"
                   decoding="async"
@@ -138,7 +173,13 @@
             <li class="itinerary-list__item">
               <figure class="itinerary-list__figure">
                 <img
-                  src="../assets/images/kioto-dia6.jpg"
+                  src="../assets/images/kioto-dia6.jpg?width=700"
+                  srcset="
+                    ../assets/images/kioto-dia6.jpg?width=500 500w,
+                    ../assets/images/kioto-dia6.jpg?width=700 700w,
+                    ../assets/images/kioto-dia6.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="Templo en Kioto"
                   loading="lazy"
                   decoding="async"
@@ -158,7 +199,13 @@
             <li class="itinerary-list__item">
               <figure class="itinerary-list__figure">
                 <img
-                  src="../assets/images/osaka-dia7.jpg"
+                  src="../assets/images/osaka-dia7.jpg?width=700"
+                  srcset="
+                    ../assets/images/osaka-dia7.jpg?width=500 500w,
+                    ../assets/images/osaka-dia7.jpg?width=700 700w,
+                    ../assets/images/osaka-dia7.jpg?width=900 900w
+                  "
+                  sizes="(max-width: 768px) 100vw, 700px"
                   alt="Castillo de Osaka"
                   loading="lazy"
                   decoding="async"
