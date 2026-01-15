@@ -7,6 +7,8 @@
     <meta name="description" content="Japón Exprés: itinerario rápido de 7 días para descubrir Tokio, Takayama, Kioto y Osaka."/>
     <meta name="author" content="Michelle Bazán Jiménez">
     <title>Japón Exprés: ruta rápida de 7 días</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./styles/main.scss" />
   </head>
   
@@ -78,7 +80,9 @@
                 <img
                   src="./assets/images/tokio-asakusa-principal.jpg?width=1200"
                   alt="Vista del templo Sensō-ji en Tokio, uno de los puntos clave del Japón tradicional"
-                  loading="lazy"
+                  fetchpriority="high"
+                  decoding="async"
+                  loading="eager"
                   width="1200"
                   height="800"
                 />
